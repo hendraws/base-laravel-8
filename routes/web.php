@@ -16,11 +16,17 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Auth::routes();
+
 Route::get('/', function () {
     return view('layouts.master');
 });
 
+Route::get('/refresh', function () {
+    \Artisan::call('optimize:clear');
+    return redirect('/');
+});
 
-Auth::routes();
+Route::resource('/management-users', 'UserController');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
