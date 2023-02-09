@@ -7,7 +7,8 @@
     Judul
 @endsection
 @section('content-header-right')
-    tambah
+    {{-- modal --}}
+    <a class="btn btn-sm btn-primary modal-button float-right" href="Javascript:void(0)" data-target="ModalForm" data-url="url-action" data-toggle="tooltip" data-placement="top" title="Edit">Tambah Data</a>
 @endsection
 @section('main-content')
     <div class="row">

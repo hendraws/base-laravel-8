@@ -34,19 +34,24 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+
+                {{-- DROP DOWN --}}
                 <li class="nav-item menu-open">
-                    <a href="#" class="nav-link active">
+                    {{-- PARENT --}}
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Starter Pages
+                            Master Data
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
+                    {{-- END PARENT --}}
+                    {{--  CHILD --}}
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="{{ action('UserController@index') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Active Page</p>
+                                <p>Pengguna</p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -56,6 +61,17 @@
                             </a>
                         </li>
                     </ul>
+                    {{-- END CHILD --}}
+                </li>
+                {{-- ENDDROPDOWN --}}
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Simple Link
+                            <span class="right badge badge-danger">New</span>
+                        </p>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">

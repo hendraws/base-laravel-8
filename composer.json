@@ -18,7 +18,10 @@
         "laravel/ui": "^3.4",
         "owen-it/laravel-auditing": "^13.0",
         "spatie/laravel-permission": "^5.9",
-        "wildside/userstamps": "^2.2"
+        "wildside/userstamps": "^2.2",
+        "yajra/laravel-datatables-oracle": "^9.0",
+        "intervention/image": "^2.7",
+        "yoeunes/toastr": "^1.2"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
